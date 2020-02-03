@@ -17,15 +17,24 @@ ds5 = Cohort("Spock Like Focused data sciencio Cohort 5")
 
 # Create 4 or more students, and assign to cohorts
 
-jeremiah = Student()
-guy = Student()
-melody = Student()
-boydhivemind = Student()
-crowley = Student()
-pipochristo = Student()
-manilawatt = Student()
+jeremiah = Student("Pariah", "Wiggin")
+guy = Student("Guy", "Cherkesky")
+melody = Student("Melody", "The Bold and Boisterous")
+boydhivemind = Student("We are the Boyd", "Resistance is Futile")
+crowley = Student("Ryan", "Crowley")
+pipochristo = Student("Christian", "Pimpin")
+manilawatt = Student("Manila", "Bui")
+
+dc36Supremacy.students.extend([jeremiah, guy, melody, boydhivemind, crowley, pipochristo, manilawatt])
 
 
 # Create 3, or more, instructors and assign them to one of the cohorts.
+
+joNoSchmo = Instructor("Jo", "Shepherd")
+jiskieBuisness = Instructor("Jisie", "David")
+jennaKalWitcher = Instructor("Jenna", "Solis")
+j3 = Instructor("Their powers combined", "You gonna learn today (bout some code)!")
+
+dc36Supremacy.instructors.extend([joNoSchmo, jiskieBuisness, jennaKalWitcher, j3])
 
 # Have each instructor Assign 2 exercises
