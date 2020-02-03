@@ -8,6 +8,8 @@ fizz_buzz = Exercise("fizzBuzz", "Javascript")
 city_spinner = Exercise("citySpinner", "Python")
 joints_pizza = Exercise("jointsPizza", "Javython")
 cap_stone = Exercise("stoneCapped", "Pyvascript")
+bender_protocol = Exercise("Hey Wanna Kill all Humans?", "Python")
+slurm_discovery = Exercise("slurmDiscovery", "Javascript")
 
 # Create 3 different instances of cohort
 dc36Supremacy = Cohort("Supreme Cohort 36")
@@ -38,3 +40,21 @@ j3 = Instructor("Their powers combined", "You gonna learn today (bout some code)
 dc36Supremacy.instructors.extend([joNoSchmo, jiskieBuisness, jennaKalWitcher, j3])
 
 # Have each instructor Assign 2 exercises
+
+for student in dc36Supremacy.students:
+    jiskieBuisness.assign_exercise(student, fizz_buzz)
+    jiskieBuisness.assign_exercise(student, city_spinner)
+    
+    joNoSchmo.assign_exercise(student, bender_protocol)
+    joNoSchmo.assign_exercise(student, slurm_discovery)
+    
+    jennaKalWitcher.assign_exercise(student, joints_pizza)
+    jennaKalWitcher.assign_exercise(student, cap_stone)
+    
+    for student in dc36Supremacy.students:
+        for exercise in student.current_exercises:
+            print(f"{student.first_name} has been assigned {exercise.name} in {exercise.language}")
+            print()
+    
+    
+    

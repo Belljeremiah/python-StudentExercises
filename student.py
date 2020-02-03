@@ -3,7 +3,7 @@ from person import Person
 
 class Student(Person):
     
-    def__init__(self, firstName, lastName):
+    def __init__(self, firstName, lastName):
         super().__init__(firstName, lastName)
         # Establishing the properties of each student
         # self.first_name = ""
