@@ -1,4 +1,5 @@
 from person import Person
+from exercise import Exercise
 
 class Instructor(Person):
     
@@ -10,6 +11,6 @@ class Instructor(Person):
         # cohort = []
         self.specialty = ""
         
-    def __init__(self, student, exercise):
+    def assign_exercise(self, student, exercise):
         student.current_exercises.append(exercise)
         

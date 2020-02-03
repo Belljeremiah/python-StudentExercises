@@ -1,4 +1,4 @@
-class Exercise:
+class Exercise():
     
     def __init__(self, name, language_type):
         self.name = name

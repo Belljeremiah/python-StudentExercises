@@ -6,11 +6,10 @@
 # Array/List/Collection of Students
 # Array/list/Collection of Instructors
 
-class Cohort:
-    
+class Cohort():
     def __init__(self, name):
         self.name = name
         self.students = []
-        self.instructors = []
         self.slack_handle = ''
         self.current_exercises = []
+        self.instructors = []

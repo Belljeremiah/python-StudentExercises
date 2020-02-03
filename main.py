@@ -53,7 +53,7 @@ for student in dc36Supremacy.students:
     
     for student in dc36Supremacy.students:
         for exercise in student.current_exercises:
-            print(f"{student.first_name} has been assigned {exercise.name} in {exercise.language}")
+            print(f"{student.first_name} has been assigned {exercise.name} in {exercise.language_type}")
             print()
     
     
